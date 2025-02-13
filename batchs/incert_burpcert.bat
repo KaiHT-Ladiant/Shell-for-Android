@@ -20,6 +20,7 @@ set /p cerName=Do u Want Custom Certification Name? - Default Name is cacert(Y/N
 if /i "%cerName%"=="N" SET %cerName%=cacert
 if /i "%cerName%"=="Y" goto c_cert
 
+:c_cert
 REM Set Custom Certification Name
 set /p cerName=Setting Custom Certification Name: 
 
