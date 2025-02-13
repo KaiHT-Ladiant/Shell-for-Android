@@ -35,7 +35,7 @@ openssl x509 -inform DER -in %cerName%.der -out %cerName%.pem
 openssl x509 -inform PEM -subject_hash_old -in %cerName%.pem
 echo [-] Finish changing Certification Files
 echo [+] Start Moving on Certification file to Device.
-adb shell "mv %cerName%.pem 9a5ba575.0"
+move %cerName%.pem 9a5ba575.0
 adb push 9a5ba575.0 /system/etc/security/cacerts/
 adb shell "chown 644 /system/etc/security/cacerts/9a5ba575.0"
 echo [-] Finish Moveing Certification file.
