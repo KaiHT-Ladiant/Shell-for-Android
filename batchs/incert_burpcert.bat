@@ -1,5 +1,10 @@
 @echo off
 title Incert-BurpCert
+REM Code By Kai_HT
+REM Will be updated later
+REM Version 1.0
+REM Set Encoding Type "ANSI" to save.
+
 echo.
 echo ┌───────────────────────────────────────────────────────┒
 echo │       Incert BurpsuiteCertification to Android        ┃
