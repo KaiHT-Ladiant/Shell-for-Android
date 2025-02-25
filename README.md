@@ -6,17 +6,17 @@ List in This Repository.
 
 
    
-## Incert-BurpCert - Android Certificate Installer
+### Incert-BurpCert - Android Certificate Installer
 Automated tool for installing Burp Suite certificate on rooted Android devices
 
-### 📝 Description
+#### 📝 Description
 Windows batch script that automates:
 1. Certificate conversion from DER to PEM format
 2. Hash-based renaming for Android system recognition
 3. ADB push to system certificate directory
 4. Permission setting and partition remount
 ---
-### 🛠️ Prerequisites
+#### 🛠️ Prerequisites
 - ✔️ Rooted Android device with USB debugging enabled
 - ✔️ adb configured in system PATH 🔗 [ADB installation guide](https://developer.android.com/studio/command-line/adb)
   - [Download Link](https://developer.android.com/tools/releases/platform-tools?hl=ko)
@@ -25,7 +25,7 @@ Windows batch script that automates:
   - Default name: cacert.der
   - Custom name: Must match user input
 ---
-### 🚀 Usage
+#### 🚀 Usage
 ```bash
 1. Export Burp Certificate:
    - Burp Suite → Proxy → Options → Export CA certificate → DER format
@@ -40,7 +40,7 @@ Windows batch script that automates:
    [N] for default name (cacert)
 ```
 ---
-### ⚙️ Technical Process
+#### ⚙️ Technical Process
 ```mermaid
 graph TD
     A[Start] --> B{Use Default Name?}
@@ -54,7 +54,7 @@ graph TD
     H --> I[Remount Partition RO]
 ```
 ---
-### 📌 Important Notes
+#### 📌 Important Notes
 - 🔄 System Partition Requirement:   
 Requires write access to /system partition. If using Magisk:
 ```bash
@@ -70,7 +70,7 @@ Script includes automatic:
 - Partition remount protection   
 - File ownership verification (chmod 644)
 ---
-### ❓ Troubleshooting
+#### ❓ Troubleshooting
 |Error|Solution|
 |------|---|
 |adb: command not found|Add platform-tools to PATH|
@@ -78,7 +78,7 @@ Script includes automatic:
 |Permission denied|Enable root access in dev options|
 |Certificate not showing|Check hash prefix match|
 ---
-### 📜 License
+#### 📜 License
 MIT License - Kai_HT © 2024   
 _"Incert-BurpCert is provided as-is - use responsibly!"_
 ```text
