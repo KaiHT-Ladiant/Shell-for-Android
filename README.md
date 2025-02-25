@@ -1,7 +1,7 @@
 # Shell-for-Android
 Shell file for installing the Burpsuite certificate into Android
 
-## Incert-BurpCert - Android Certificate Installer
+## 1. Incert-BurpCert - Android Certificate Installer
 Automated tool for installing Burp Suite certificate on rooted Android devices
 
 ### 📝 Description
